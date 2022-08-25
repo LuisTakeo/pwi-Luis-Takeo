@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Essa area e destinada a informações e
+    dados que poderão ser acessados pelo corpo.
+    obs: podemos usar scripts e metadados  
+    -->
+    <title>Aula 240822</title>
+
+</head>
+<body>
+    <!-- Conteudo do documento / página   -->
+
+<h1> Conhecendo o html</h1>
+<p>O html é utilizado para exibir documentos </br> na
+WEB, esses documentos são estruturados atraves do </br> 
+uso de tags. </nav> </p>
+<h2> Exibindo códigos especiais
+    
+</h2>
+
+
+
+</body>
+</html>
