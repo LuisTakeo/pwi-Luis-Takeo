@@ -1,5 +1,6 @@
 body {
-    background: gainsboro;
+    background: #aaa;
+    text-align: center;
 }
 
 .imagens {
@@ -11,15 +12,26 @@ body {
     text-decoration: underline;
 }
 
+.conteudo{
+    border: solid 1px;
+    background: gainsboro;
+}
+
+.titulo{
+    border: solid 2px;
+    background: #88b;
+}
+
 h1 {
-    color: red;
+    color: whitesmoke;
     font: bold;
     font-size: 50px;
     text-decoration: underline;
+    
 }
 
 h2 {
-    color: orangered;
+    color: gray;
     font-size: 40px;
 }
 
