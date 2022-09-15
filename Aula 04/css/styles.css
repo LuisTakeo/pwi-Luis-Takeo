@@ -1,0 +1,34 @@
+body {
+    background: rgb(228, 165, 94);
+  }
+
+  h1{
+    font-size:  50px;
+    color: gainsboro;
+  }
+  
+  h2 {
+    font-size: 30px;
+    color: white;        
+  }
+
+  h6 {
+    font-size: 15px;
+  }
+
+  .myDiv {
+    border: 5px outset rgb(60, 255, 0);
+    background-color: rgb(109, 159, 175);    
+    text-align: center;
+    width: 300px;
+    display: inline-block;
+    margin: 10px 25px;
+  }
+  
+  .conteudo {
+    background: gray; 
+    width: 800px;
+    border: solid red;
+    text-align: center;
+    margin: auto;
+  }
