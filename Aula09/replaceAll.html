@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="background-topo">
+        <div class="topo">
+            <div class="logo">
+                <a href="#">Aula 09</a>
+            </div>
+            <div class="contato">
+                <a href="./index.html">Letras</a>
+                <a href="./Sobrenome.html">Sobrenome</a>
+                <a href="./substring.html">Exercicio 3</a>
+                <a href="#">Exercicio 4</a>
+                <a href="#">Exercicio 5</a>
+                <a href="#">Exercicio 6</a>
+                <a href="#">Exercicio 7</a>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <div class="javascript">
+        <h2>Variáveis</h2>
+
+        <p>Este é um substring, que faz uma função parecida com o slice, botando o primeiro valor como a posição inicial e o segundo valor a quantidade de caracteres adiante. Esse aqui está cortando meu terceiro nome: </p>
+
+        <p id="demo">Eu gosto de bolo, bolo de laranja, bolo de coco, bolo de chocolate.</p>
+        <button onclick="alterarNome()">Meu nome</button>
+    </div>
+
+ 
+
+    <script>
+        function alterarNome() {
+        let text = document.getElementById("demo").innerHTML;
+        text = text.replaceAll("bolo","pizza")
+        document.getElementById("demo").innerHTML = text;
+    }
+    </script>
+    
+
+
+    <script></script>
+</body>
+</html>
