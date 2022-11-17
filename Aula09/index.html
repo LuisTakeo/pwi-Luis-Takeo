@@ -15,12 +15,12 @@
             </div>
             <div class="contato">
                 <a href="#">Letras</a>
-                <a href="Sobrenome.html">Sobrenome</a>
-                <a href="./substring.html">Exercicio 3</a>
-                <a href="./replace.html">Exercicio 4</a>
-                <a href="./replaceAll.html">Exercicio 5</a>
-                <a href="#">Exercicio 6</a>
-                <a href="#">Exercicio 7</a>
+                <a href="./Sobrenome.html">Sobrenome</a>
+                <a href="./substring.html">Substring</a>
+                <a href="./replace.html">Replace</a>
+                <a href="./replaceAll.html">ReplaceAll</a>
+                <a href="./upperCase.html">LetraGRAMDE</a>
+                <a href="./charAt.html">CharAt</a>
             </div>
         </div>
     </div>
@@ -32,11 +32,13 @@
 
         <p>Este é um javascript para contar as letras do meu nome completo. A quantidade de letras é:  </p>
 
+        <p id="nome">Luis Henrique Takeo Paim Yuahasi</p>
+
         <p id="demo"></p>
     </div>
 
     <script>
-        let text = "Luis Henrique Takeo Paim Yuahasi";
+        let text = document.getElementById("nome").innerHTML;
         document.getElementById("demo").innerHTML = text.length;
     </script>
     

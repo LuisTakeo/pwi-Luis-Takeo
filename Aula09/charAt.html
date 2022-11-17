@@ -15,12 +15,12 @@
             </div>
             <div class="contato">
                 <a href="./index.html">Letras</a>
-                <a href="#">Sobrenome</a>
+                <a href="./Sobrenome.html">Sobrenome</a>
                 <a href="./substring.html">Substring</a>
                 <a href="./replace.html">Replace</a>
                 <a href="./replaceAll.html">ReplaceAll</a>
                 <a href="./upperCase.html">LetraGRAMDE</a>
-                <a href="./charAt.html">CharAt</a>
+                <a href="#">CharAt</a>
             </div>
         </div>
     </div>
@@ -29,14 +29,22 @@
 
     <div class="javascript">
         <h2>Variáveis</h2>
-        <p>Este javascript se chama slice e está cortando a parte que eu predefini do texto. No caso, eu cortei meu sobrenome que é: </p>
-        <p id="demo"></p>
+
+        <p>Esse é o charAt, aonde pega o caractere na posição que eu escolher. </p>
+
+        <p id="demo">Eu gosto de bolo, bolo de laranja, bolo de coco, bolo de chocolate.</p>
+        <p id="charAt"></p>
+        <button onclick="alterarNome()">Posição da letra</button>
     </div>
 
+ 
+
     <script>
-        let text = "Luis Henrique Takeo Paim Yuahasi";
-        let part = text.slice(25,33);
-        document.getElementById("demo").innerHTML = part; 
+        function alterarNome() {
+        let text = document.getElementById("demo").innerHTML;
+        document.getElementById("charAt").innerHTML = text.charAt(10);
+
+    }
     </script>
     
 
