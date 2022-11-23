@@ -41,7 +41,8 @@ const calculaTabuada = () => {
         tabuadaEscolha(x)
     }else{
         console.log("Não é um número.")
-    
+        alert("Não é um número")
+        calculaTabuada()
     }
 }
 
