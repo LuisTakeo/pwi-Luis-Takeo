@@ -1,28 +1,31 @@
-function soma(a){ //currying é um jeito de aproveitar uma variavel utilizada mais de uma vez para ser distribuida em pequenas funções
-    return function(b){
-        console.log(`${a}\n+ \n${b}`)
-        return a + b;
-    }
-}
-
-let soma2 = soma(2)
-
-console.log(soma2(2));
-
 function multi(x){
     return function(y){
         return x * y
     }
 }
-function tabuada(){
-    for(let x = 1; x <= 10; x++){
-        console.log(`\ntabuada do ${x}`);
-        for(let y = 1; y <= 10; y++){
-            let multi2 = multi(x)
+
+function tabuadaCompleta(){
+    let x
+    let y
+    let multi2
+    let textoT1 = ""
+    let textoT2 = ""
+    let textoT3 = ""
+    for(x = 1; x <= 10; x++){
+        console.log(`Tabuada do ${x}`);
+        textoT1 = `Tabuada do ${x}:\n`
+        for(y = 1; y <= 10; y++){
+            multi2 = multi(x)
             console.log(`${x} * ${y} = ${multi2(y)}`)
+            textoT2 += `${x} * ${y} = ${multi2(y)}\n`
         }
+        textoT3 += textoT1 + textoT2
+        textoT2 = ""
     }
+    document.getElementById("TabuadaCompleta").innerText = textoT3
+    
 }
+
 
 function tabuadaEscolha(x){
     let texto1 = `Tabuada do ${x} \n`
